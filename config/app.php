@@ -161,6 +161,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Laravel\Sanctum\SanctumServiceProvider::class,
+        Flugg\Responder\ResponderServiceProvider::class,
+        Styde\Enlighten\Providers\EnlightenServiceProvider::class,
+        // Styde\Enlighten\Tests\EnlightenSetup::class,
 
         /*
          * Package Service Providers...
@@ -227,6 +231,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Responder' => Flugg\Responder\Facades\Responder::class,
+        'Transformation' => Flugg\Responder\Facades\Transformation::class,
+        'EnlightenSetup' => Styde\Enlighten\Providers\EnlightenServiceProvider::class,
+        // '' => Styde\Enlighten\Tests\EnlightenSetup::class,
 
     ],
 
